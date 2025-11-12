@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Restaurant Website - Portfolio</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  a { text-decoration: none; color: inherit; }
+  h1, h2, h3 { margin: 0; }
+
+  /* Header / Hero */
+  header {
+    background: url('your-hero-image.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  }
+  header h1 { font-size: 3em; margin-bottom: 10px; }
+  header p { font-size: 1.5em; }
+  .btn-reserve {
+    margin-top: 20px;
+    background: #ff4d4d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .btn-reserve:hover { background: #e63939; }
+
+  /* Navigation */
+  nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    z-index: 100;
+  }
+  nav a {
+    margin: 0 20px;
+    font-weight: bold;
+    color: #ff4d4d;
+    transition: 0.3s;
+  }
+  nav a:hover { color: #e63939; }
+
+  /* Sections */
+  section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  /* Menu Section */
+  .menu-item {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .menu-item img {
+    width: 120px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  /* Contact */
+  #contact p, #contact a { font-size: 1.1em; }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #ff4d4d;
+    color: white;
+  }
+
+  /* Responsive */
+  @media(max-width:768px){
+    header h1{ font-size:2.2em; }
+    .menu-item{ flex-direction: column; align-items: flex-start; }
+    .menu-item img{ width: 100%; height: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <h1>Delicious Bites</h1>
+  <p>AI-Generated Restaurant Design</p>
+  <a href="#menu" class="btn-reserve">View Menu</a>
+</header>
+
+<!-- Navigation -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#menu">Menu</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>Welcome to Delicious Bites! Our restaurant offers the finest dishes with a modern twist. All designs of this website are generated and refined using AI tools — showcasing how AI can create beautiful, functional interfaces.</p>
+</section>
+
+<!-- Menu Section -->
+<section id="menu">
+  <h2>Our Menu</h2>
+
+  <div class="menu-item">
+    <img src="dish1.jpg" alt="Dish 1">
+    <div>
+      <h3>Spaghetti Carbonara</h3>
+      <p>Classic Italian pasta with creamy sauce and pancetta. Price: $12</p>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="dish2.jpg" alt="Dish 2">
+    <div>
+      <h3>Margherita Pizza</h3>
+      <p>Fresh tomatoes, mozzarella, and basil on a hand-tossed crust. Price: $10</p>
+    </div>
+  </div>
+
+  <div class="menu-item">
+    <img src="dish3.jpg" alt="Dish 3">
+    <div>
+      <h3>Chocolate Lava Cake</h3>
+      <p>Rich chocolate cake with molten center, served with ice cream. Price: $6</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p>Insert AI-generated images of dishes, interiors, or promotional material here.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: <a href="mailto:contact@deliciousbites.com">contact@deliciousbites.com</a></p>
+  <p>Phone: +1 234 567 890</p>
+  <p>Address: 123 AI Street, Food City</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Delicious Bites. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
